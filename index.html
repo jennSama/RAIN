@@ -209,6 +209,7 @@ table.part td.ok{color:#2c5a0d}
 table.part td.no{color:#b3c0c5;text-align:center}
 .lvl{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px}
 .lvl.Alta{background:#e6f2d6;color:#3d6413}.lvl.Media{background:var(--teal-soft);color:#14627e}.lvl.Baja{background:#fdf0dc;color:#8a5208}
+a.yt{display:inline-block;white-space:nowrap;font-size:12.5px;font-weight:700;color:#fff;background:#c4302b;padding:4px 10px;border-radius:6px;text-decoration:none}a.yt:hover{background:#a12520}
 svg text{font-family:"Plus Jakarta Sans",sans-serif}
 
 footer{border-top:1px solid var(--line);background:#fff;padding:22px 0;font-size:12.5px;color:var(--mute)}
@@ -424,7 +425,7 @@ footer{border-top:1px solid var(--line);background:#fff;padding:22px 0;font-size
     <div class="eyebrow">Línea 02 · Formación · junio a noviembre de 2026</div>
     <h1>Primer ciclo de formación RAIN</h1>
     <p>La formación RAIN llegó a 489 personas de más de 40 instituciones, con participación de 18 de las 19 instituciones de la red y una satisfacción de 4,9 sobre 5.</p>
-    <div class="meta"><span class="chip">Coordinación: Dra. Mariela Tapia León (UG)</span><span class="chip">Canal YouTube @RAINEC</span></div>
+    <div class="meta"><span class="chip">Coordinación: Dra. Mariela Tapia León (UG)</span><a class="chip link" href="https://www.youtube.com/@RAINEC" target="_blank" rel="noopener">Canal YouTube @RAINEC ↗</a></div>
   </div></div>
   <main><div class="wrap stack">
     <div class="grid g6">
@@ -473,7 +474,7 @@ footer{border-top:1px solid var(--line);background:#fff;padding:22px 0;font-size
       <div class="k">Actividades realizadas</div>
       <h3>6 sesiones entre agosto y octubre</h3>
       <div class="tscroll" style="margin-top:12px"><table>
-        <thead><tr><th>Fecha</th><th>Actividad</th><th>Facilitador</th><th>Formato</th><th class="num">Duración</th><th class="num">Vistas YouTube</th></tr></thead>
+        <thead><tr><th>Fecha</th><th>Actividad</th><th>Facilitador</th><th>Formato</th><th class="num">Duración</th><th class="num">Vistas YouTube</th><th>Grabación</th></tr></thead>
         <tbody id="f-act"></tbody>
       </table></div>
     </div>
@@ -1029,13 +1030,13 @@ bars($('#f-inst'), [
   ['U. de Guayaquil (UG)',307],['U. Nacional de Loja',34],['IST Oriente',16],['ESPOL',14],['IST del Azuay',12],['U. Politécnica Estatal del Carchi',12],['UTPL',8],['IST Loja',6],['PUCE Ibarra',5],['U. Católica de Cuenca',4],['IST del Austro',3],['UCSG',3],['UE Cosmos Homeschool',2],['UNACH',2],['U. Indoamérica',2],['IST Cotopaxi',1],['UEES',1],['UNAE',1]
 ].map(([l,v],i)=>({l,v,alt:i>0})));
 $('#f-act').innerHTML = [
-  ['26 ago','Taller Crea Mundos Inmersivos, sesión 1: narrativa con IA, VRChat y Vuforia','Mgtr. Jennifer Samaniego (UTPL)','Taller en alianza · TV UNAD Virtual','1 h 43 min',1200],
-  ['2 sep','Taller Crea Mundos Inmersivos, sesión 2','Mgtr. Jheyson Gaona (UCACUE)','Taller en alianza · TV UNAD Virtual','2 h 07 min',951],
-  ['9 sep','Taller Crea Mundos Inmersivos, sesión 3','Mgtr. Jheyson Gaona (UCACUE)','Taller en alianza · TV UNAD Virtual','1 h 18 min',730],
-  ['28 sep','Webinar Navegando por la Web en 3D','Dra. Mariela Tapia (UG)','Webinar RAIN · Zoom','1 h 41 min',72],
-  ['5 oct','Webinar El aula que sale de la pantalla: WebAR y AR.js Studio','Dr. Wellington Villota (UCSG)','Webinar RAIN · Zoom','1 h 05 min',41],
-  ['12 oct','Webinar Recursos Educativos con RA: Unity, Vuforia y MyWebAR','Lic. Anthony Tibán (UG)','Webinar RAIN · Zoom','56 min',28]
-].map(r=>`<tr><td style="white-space:nowrap">${r[0]}</td><td><b>${r[1]}</b></td><td>${r[2]}</td><td>${r[3]}</td><td class="num">${r[4]}</td><td class="num">${fmt(r[5])}</td></tr>`).join('');
+  ['26 ago','Taller Crea Mundos Inmersivos, sesión 1: narrativa con IA, VRChat y Vuforia','Mgtr. Jennifer Samaniego (UTPL)','Taller en alianza · TV UNAD Virtual','1 h 43 min',1200,'wb4Se5htjZM'],
+  ['2 sep','Taller Crea Mundos Inmersivos, sesión 2','Mgtr. Jheyson Gaona (UCACUE)','Taller en alianza · TV UNAD Virtual','2 h 07 min',951,'rMs-2pebWhA'],
+  ['9 sep','Taller Crea Mundos Inmersivos, sesión 3','Mgtr. Jheyson Gaona (UCACUE)','Taller en alianza · TV UNAD Virtual','1 h 18 min',730,'WW6FhFVPHMk'],
+  ['28 sep','Webinar Navegando por la Web en 3D','Dra. Mariela Tapia (UG)','Webinar RAIN · Zoom','1 h 41 min',72,'2qJ_U-xrzTo'],
+  ['5 oct','Webinar El aula que sale de la pantalla: WebAR y AR.js Studio','Dr. Wellington Villota (UCSG)','Webinar RAIN · Zoom','1 h 05 min',41,'kHg2xEyp6dg'],
+  ['12 oct','Webinar Recursos Educativos con RA: Unity, Vuforia y MyWebAR','Lic. Anthony Tibán (UG)','Webinar RAIN · Zoom','56 min',28,'-ssfDxrtl-Q']
+].map(r=>`<tr><td style="white-space:nowrap">${r[0]}</td><td><b>${r[1]}</b></td><td>${r[2]}</td><td>${r[3]}</td><td class="num">${r[4]}</td><td class="num">${fmt(r[5])}</td><td><a class="yt" href="https://www.youtube.com/watch?v=${r[6]}" target="_blank" rel="noopener">▶ Ver en YouTube</a></td></tr>`).join('');
 bars($('#f-rol'), [{l:'Docentes',v:238},{l:'Estudiantes',v:189},{l:'Administrativos',v:30,alt:1},{l:'Investigadores',v:24,alt:1},{l:'Otros',v:8,alt:1}]);
 bars($('#f-canal'), [{l:'Correo',v:310},{l:'WhatsApp',v:71,alt:1},{l:'Colega',v:71,alt:1},{l:'Redes sociales',v:41,alt:1},{l:'Sitio web',v:7,alt:1}]);
 bars($('#f-temas'), [
